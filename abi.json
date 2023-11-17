@@ -1,0 +1,173 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "key",
+                "type": "bytes32"
+            }
+        ],
+        "name": "CustomDataDeleted",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "key",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "integerValue",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "stringValue",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "bytes32Value",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "booleanValue",
+                "type": "bool"
+            }
+        ],
+        "name": "CustomDataUpdated",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "",
+                "type": "bytes32"
+            }
+        ],
+        "name": "dataMapping",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "integerValue",
+                "type": "uint256"
+            },
+            {
+                "internalType": "string",
+                "name": "stringValue",
+                "type": "string"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "bytes32Value",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "bool",
+                "name": "booleanValue",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "key",
+                "type": "string"
+            }
+        ],
+        "name": "deleteCustomDataByKey",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "key",
+                "type": "string"
+            }
+        ],
+        "name": "getCustomDataByKey",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "integerValue",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "stringValue",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "bytes32",
+                        "name": "bytes32Value",
+                        "type": "bytes32"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "booleanValue",
+                        "type": "bool"
+                    }
+                ],
+                "internalType": "struct Storage.CustomData",
+                "name": "",
+                "type": "tuple"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "key",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_integerValue",
+                "type": "uint256"
+            },
+            {
+                "internalType": "string",
+                "name": "_stringValue",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_bytes32Value",
+                "type": "string"
+            },
+            {
+                "internalType": "bool",
+                "name": "_booleanValue",
+                "type": "bool"
+            }
+        ],
+        "name": "setCustomDataByKey",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]
